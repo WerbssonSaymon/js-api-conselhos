@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgray;
+}
+
+#container {
+    width: 280px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 15px 15px 0 0;
+    background-color: #f5f5f5;
+}
+
+#sms {
+    text-align: center;
+}
+
+#enumeration {
+    display: block;
+}
+
+button {
+    width: 280px;
+    padding: 10px 0; 
+    cursor: pointer;
+}
