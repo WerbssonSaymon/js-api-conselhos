@@ -1,6 +1,6 @@
 # js-api-conselhos
 
-## API de mensagens e aconcelhamentos em javascript
+## API de aconcelhamentos em javascript
 
 ### Tecnologias
 
