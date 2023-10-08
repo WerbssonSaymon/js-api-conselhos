@@ -1,40 +1,81 @@
+:root {
+    --blue: #0000ff;
+    --gray: #d3d3d3;
+    --white: #f5f5f5;
+    --w100: 100vw;
+    --h100: 100vh;
+}
+
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    width: var(--w100);
+    height: var(--h100);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: lightgray;
+    background-color: var(--gray);
 }
 
-#container {
-    width: 280px;
+.container {
+    width: 380px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: var(--white);
+    -webkit-box-shadow: 11px 13px 10px -3px rgba(0,0,0,0.62);
+    -moz-box-shadow: 11px 13px 10px -3px rgba(0,0,0,0.62);
+    box-shadow: 11px 13px 10px -3px rgba(0,0,0,0.62);
+}
+
+.container__block {
+    width: 300px;
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    border: 1px solid #000;
-    border-radius: 15px 15px 0 0;
-    background-color: #f5f5f5;
 }
 
-#sms {
+#container__sms {
     text-align: center;
+    font-weight: bold;
 }
 
-#enumeration {
+#container__enumeration {
     display: block;
+    font-weight: bold;
 }
 
 button {
-    width: 280px;
-    padding: 10px 0; 
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 0;
+    background-color: var(--blue);
+    color: #ffffff; 
+    font-size: 16px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 300px;
+        height: 350px;
+    }
+    .container__block {
+        width: 250px;
+        height: 200px;
+    }
+    button {
+        width: 250px;
+        margin-top: 50px;
+    }
 }

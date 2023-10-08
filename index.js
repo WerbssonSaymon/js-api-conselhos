@@ -1,7 +1,7 @@
-// Função para acessar a API e apresentar os dados no index.html
+const sms = document.getElementById("container__sms");
+const enumeration = document.getElementById("container__enumeration");
 
-const sms = document.getElementById("sms");
-const enumeration = document.getElementById("enumeration");
+// Função para acessar a API e apresentar os dados no index.html
 
 function gerarConcelho() {
     let beforeSms = `Conselho: `
